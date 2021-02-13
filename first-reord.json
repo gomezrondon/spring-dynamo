@@ -1,0 +1,23 @@
+{
+  "filmId": 1,
+  "Title": "Jurassic Park",
+  "Year": "1993",
+  "Rated": "Approved",
+  "Released": "11 Juned 1993",
+  "Runtime": "2 Hrs",
+  "Genre": [
+    "Action",
+    "Adventure",
+    "Sel-Fi"
+  ],
+  "Director": "Steven Spielberg",
+  "Actors": [
+    "Jeff Goldblum",
+    "Sam Neill"
+  ],
+  "Plot": "A pragmatic paleontologist visiting an almost comple",
+  "Language": "English",
+  "Country": "USA",
+  "Awards": "Won 3 Oscars. Another 39 wins & 27 nominations.",
+  "imdbRating": "8.1"
+}
