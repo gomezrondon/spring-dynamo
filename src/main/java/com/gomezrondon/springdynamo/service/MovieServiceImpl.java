@@ -24,4 +24,11 @@ public class MovieServiceImpl implements MovieService {
 
         return collect;
     }
+
+    @Override
+    public Movie insertMovie(Movie movie) {
+        return repository.save(movie);
+    }
+
+
 }
