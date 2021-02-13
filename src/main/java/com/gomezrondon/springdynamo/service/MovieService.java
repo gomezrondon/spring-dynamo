@@ -9,4 +9,5 @@ public interface MovieService {
 
     Movie insertMovie(Movie movie);
 
+    Movie update(Movie movie);
 }

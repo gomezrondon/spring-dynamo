@@ -30,5 +30,10 @@ public class MovieServiceImpl implements MovieService {
         return repository.save(movie);
     }
 
+    @Override
+    public Movie update(Movie movie) {
+        return repository.save(movie);
+    }
+
 
 }

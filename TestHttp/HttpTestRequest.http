@@ -21,8 +21,36 @@ Content-Type: application/json
   "director": "Tim Burton",
   "actors": [
     "Michael Keaton",
-    " Jack Nicholson",
-    " Kim Basinger"
+    "Jack Nicholson",
+    "Kim Basinger"
+  ],
+  "plot": "The Dark Knight of Gotham City begins his war on crime with his first major enemy being Jack Napier, a criminal who becomes the clownishly homicidal Joker",
+  "language": "English",
+  "country": "USA"
+}
+
+
+###
+PUT http://localhost:8080/movies
+Content-Type: application/json
+
+{
+  "filmId": "2",
+  "title": "Batman",
+  "releaseYear": "1989",
+  "rated": "Approved",
+  "released": "11 Juned 1993",
+  "runtime": "126 min",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Sel-Fi"
+  ],
+  "director": "Tim Burton",
+  "actors": [
+    "Michael Keaton",
+    "Jack Nicholson",
+    "Kim Basinger"
   ],
   "plot": "The Dark Knight of Gotham City begins his war on crime with his first major enemy being Jack Napier, a criminal who becomes the clownishly homicidal Joker",
   "language": "English",
