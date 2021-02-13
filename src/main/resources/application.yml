@@ -4,8 +4,16 @@ cloud:
       auto: false
     region:
       static: us-east-1
+      auto: false
     credentials:
+      use-default-aws-credentials-chain: false
+      instance-profile: false
       access-key:
       secret-key:
 
 
+spring:
+  data:
+    dynamodb:
+      entity2ddl:
+        auto: validate

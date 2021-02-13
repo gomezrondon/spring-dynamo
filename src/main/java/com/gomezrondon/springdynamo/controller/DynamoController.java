@@ -1,21 +1,29 @@
 package com.gomezrondon.springdynamo.controller;
 
 
-import org.springframework.http.HttpHeaders;
+import com.gomezrondon.springdynamo.model.Movie;
+import com.gomezrondon.springdynamo.service.MovieService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
 public class DynamoController {
 
+    private final MovieService movieService;
+
+    public DynamoController(MovieService service) {
+        this.movieService = service;
+    }
 
     @GetMapping("/movies")
-    public ResponseEntity<Map<String, Object>> getAllMovies(@RequestHeader HttpHeaders headers) {
+    public ResponseEntity<List<Movie>> getAllMovies() {
+        List<Movie> allMovies = movieService.getAllMovies();
 
-        return null;
+        return new ResponseEntity<>(allMovies, HttpStatus.OK);
     }
 }
