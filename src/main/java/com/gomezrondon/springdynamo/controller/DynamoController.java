@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 
@@ -21,6 +22,12 @@ public class DynamoController {
 
     public DynamoController(MovieService service) {
         this.movieService = service;
+    }
+
+
+    @GetMapping("/time")
+    public String getTime() {
+        return LocalDateTime.now().toString();
     }
 
     @GetMapping("/movies")
